@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="css/bootstrap.css"></script>
+    <script src="css/bootstrap.css.map"></script>
+    <script src="css/bootstrap-theme.css"></script>
+    <script src="css/styles.css"></script>
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <title>What character are you?</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>What Character Are You?</h1>
+        <form action="#">
+
+          <fieldset>
+            <div class="form-group">
+              <label for="glasses">Do you wear glasses?</label>
+              <select name="glasses" id="glasses">
+                <option>True</option>
+                <option>False</option>
+                <option selected="selected"></option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="gender">Are you male or female?</label>
+              <select name="gender" id="gender">
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option selected="selected"></option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="personality">Would you consider yourself introverted or extraverted?</label>
+              <select name="personality" id="personality">
+                  <option>Introvert</option>
+                  <option>Extravert</option>
+                  <option selected="selected"></option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="blood">Would you consider yourself pure-blood?</label>
+              <select name="blood" id="blood">
+                  <option>Pure-blood</option>
+                  <option>Mud-blood</option>
+                  <option selected="selected"></option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="hair">Are you a redhead or brunette?</label>
+              <select name="hair" id="hair">
+                  <option>Redhead</option>
+                  <option>Brunette</option>
+                  <option selected="selected"></option>
+              </select>
+            </div>
+          </fieldset>
+          <button type="button" class="btn btn-success">Submit</button>
+
+        </form>
+        <div>
+          <span id="answer">The character you are like is:
+            <span class="character"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
