@@ -1,13 +1,21 @@
 $(function() {
-  var characterAnswer = 
-    $( "#glasses" ).selectmenu();
+  $("form#character").submit(function(event) {
 
-    $( "#gender" ).selectmenu();
+    var characters = $("#personality", "#glasses" , "#hair").val();
 
-    $( "#personality" ).selectmenu();
+    if (personality === "i" && "true" && "b") {
+      $("#result").text("Harry");
 
-    $( "#blood" ).selectmenu();
+    }
+    else {
+      $("#result").text("Ron");
+    }
+    
+  $(".button").click(function() {
+    $("#result").show();
+  });
 
-    $( "#hair" ).selectmenu();
+  event.preventDefault();
 
+  });
 });
